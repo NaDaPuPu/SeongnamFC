@@ -1,5 +1,7 @@
 package com.pupu.seongnam.fragment_music;
 
+import android.media.MediaPlayer;
+import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,20 +10,23 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pupu.seongnam.MainActivity;
 import com.pupu.seongnam.R;
 
 import java.util.ArrayList;
 
 public class RecyclerAdapterMusic extends RecyclerView.Adapter {
     private final static int MUSIC_COUNT = 12;
+    private View v;
     private ArrayList<RecyclerItemMusic> mData = new ArrayList<>();
     private SparseBooleanArray selectedItems = new SparseBooleanArray();
     private int prePosition = -1;
+    private MediaPlayer mediaPlayer;
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_music, parent, false);
+        v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_music, parent, false);
         return new ViewHolderMusic(v);
     }
 
@@ -46,6 +51,52 @@ public class RecyclerAdapterMusic extends RecyclerView.Adapter {
                 notifyItemChanged(position);
                 // 클릭된 position 저장
                 prePosition = position;
+
+                if (mediaPlayer != null) {
+                    mediaPlayer.release();
+                    mediaPlayer = null;
+                }
+                if (selectedItems.get(position)) {
+                    switch (position) {
+                        case 0:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music1);
+                            break;
+                        case 1:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music2);
+                            break;
+                        case 2:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music3);
+                            break;
+                        case 3:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music4);
+                            break;
+                        case 4:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music5);
+                            break;
+                        case 5:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music6);
+                            break;
+                        case 6:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music7);
+                            break;
+                        case 7:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music8);
+                            break;
+                        case 8:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music9);
+                            break;
+                        case 9:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music10);
+                            break;
+                        case 10:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music11);
+                            break;
+                        case 11:
+                            mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music12);
+                            break;
+                    }
+                    mediaPlayer.start();
+                }
             }
         });
     }
