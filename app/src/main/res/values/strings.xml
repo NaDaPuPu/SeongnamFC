@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">Seongnam</string>
+
+    <string name="home">홈</string>
+    <string name="music">응원가</string>
+    <string name="player">선수단</string>
+    <string name="setting">설정</string>
+
+    <!--  Music Title String  -->
+    <string name="musictitle1">My Hands</string>
+    <string name="musictitle2">나의 사랑 성남</string>
+    <string name="musictitle3">내 사랑 성남</string>
+    <string name="musictitle4">뛰어라 성남, 블랙전사들</string>
+    <string name="musictitle5">성남 승리를 위하여</string>
+    <string name="musictitle6">승리를 원한다면</string>
+    <string name="musictitle7">알레 성남</string>
+    <string name="musictitle8">여자친구 생일인데</string>
+    <string name="musictitle9">영원한 승자</string>
+    <string name="musictitle10">오 성남 FC</string>
+    <string name="musictitle11">오 승리의 함성</string>
+    <string name="musictitle12">오프닝 송</string>
+
+    <!--  Music Lyrics String  -->
+    <string name="musiclyrics1">
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        한여름 저 뜨거운 태양에도\n
+        온종일 쏟아지는 빗속에도\n
+        검은 날개 파도 속에도\n
+        멈출 수 없는 Moving Moving\n\n
+
+        (넌 아직 몰라 이해 못 할 거야)\n
+        내 열정의 이유\n
+        (내 손을 잡아 봐 느껴질 거야)\n
+        크게 외쳐봐\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        (Only one BLACK)\n
+        손을 머리 위로 들고 박수를 쳐\n
+        (Only one BLACK)\n
+        주변 눈치 보지 말고 그냥 맘대로 해\n
+        (Only one BLACK)\n
+        여기 모인 사람 모두 같은 맘이잖아\n
+        (Only one BLACK)\n
+        승리의 High five! 그 순간을 위해\n\n
+
+        (넌 아직 몰라 이해 못 할 거야)\n
+        내 열정의 이유\n
+        (내 손을 잡아 봐 느껴질 거야)\n
+        크게 외쳐봐\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        (Only one BLACK)\n
+        손을 머리 위로 들고 박수를 쳐\n\n
+        (Only one BLACK)\n
+        주변 눈치 보지 말고 그냥 맘대로 해\n\n
+        (Only one BLACK)\n
+        여기 모인 사람 모두 같은 맘이잖아\n\n
+        (Only one BLACK)\n
+        승리의 High five! 그 순간을 위해\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        Only one BLACK\n
+        (We are SEONGNAM)\n\n
+
+        Only one BLACK\n
+        (My hands, Your Hands)\n\n
+
+        (Only one BLACK)\n
+        손을 머리 위로 들고 박수를 쳐\n
+        (Only one BLACK)\n
+        주변 눈치 보지 말고 그냥 맘대로 해\n
+        (Only one BLACK)\n
+        여기 모인 사람 모두 같은 맘이잖아\n
+        (Only one BLACK)\n
+        승리의 High five! 그 순간을 위해
+    </string>
+    <string name="musiclyrics2">
+        나의 사랑 성남\n
+        오 우리의 성남\n
+        승리를 위해 전진\n
+        Ready Go!
+    </string>
+    <string name="musiclyrics3">
+        내사랑 성남\n
+        내 삶의 전부\n
+        성남을 위해\n
+        난 노래해\n
+        그 어떤 시련이 온다해도\n
+        영원히 성남과 함께하리
+    </string>
+    <string name="musiclyrics4">
+        뛰어라 뜨거운 가슴으로\n
+        우리는 승리하리라\n
+        성남, 성남\n
+        우리 모두 하나되리\n\n
+
+        뛰어라 뜨거운 가슴으로\n
+        우리는 승리하리라\n
+        성남, 성남\n
+        우리 모두 하나되리\n
+        Hey! Hey!\n\n
+
+        성남의 자랑 성남FC\n
+        우리는 원팀으로 도전하리라\n
+        투혼과 열정 모두 보여줘\n
+        성남의 능력을\n
+        승리를 위해 하나 된 성남으로\n
+        모두 뭉쳐 모이자\n
+        불타는 가슴의 블랙전사들\n
+        함께 날아오르자\n\n
+
+        뛰어라 뜨거운 가슴으로\n
+        우리는 승리하리라\n
+        성남, 성남\n
+        우리 모두 하나되리\n\n
+
+        뛰어라 뜨거운 가슴으로\n
+        우리는 승리하리라\n
+        성남, 성남\n
+        우리 모두 하나되리\n
+        Hey! Hey!\n
+    </string>
+    <string name="musiclyrics5">
+        성남의 승리를 위하여\n
+        오 오오오 오오오\n\n
+
+        성남의 승리를 위하여\n
+        오 오오오 오오오\n\n
+
+        성남의 승리를 위하여\n
+        오 오오오 오오오\n\n
+
+        성남의 승리를 위하여\n
+        오 오오오 오오오
+    </string>
+    <string name="musiclyrics6">
+        성남의, 성남의, 성남의\n
+        승리를 원한다면, 한다면, 한다면\n
+        두 팔을 높이 올려, 올려, 올려\n
+        모두 함께 소리쳐, 소리쳐, 소리쳐\n
+        오오오오오오~ 오오오오오오~\n
+        오오오오오오~ 오오오오오오~
+    </string>
+    <string name="musiclyrics7">
+        알레 성남\n
+        승리를 향해달리고\n
+        승리를 향해달리고\n
+        승리를 향해달리고\n
+        오~오~\n
+        알레 성남!
+    </string>
+    <string name="musiclyrics8">
+        여자친구 생일인데\n
+        난 축구장에 와 있네\n
+        인생 어차피 혼자인것을\n
+        축구나 보며 놀아보세\n
+        나의 성남 만만세\n
+        나의 성남 만만세\n
+        나의 성남 만세! 나의 성!남!\n
+        나의 성남 만만세~
+    </string>
+    <string name="musiclyrics9">
+        영원한 승자는 성남FC\n
+        오오오오오오오~ 오레오레오레\n
+        오~ 성남FC 꼭 승리하리라\n
+        오~ 성남FC 꼭 승리하리라\n\n
+
+        영원한 승자는 성남FC\n
+        오오오오오오오~ 오레오레오레\n
+        오~ 성남FC 꼭 승리하리라\n
+        오~ 성남FC 꼭 승리하리라
+    </string>
+    <string name="musiclyrics10">
+        오 성남 FC 오오오오오\n
+        오 성남 FC 오오오오오\n
+        오 성남 FC 오오오오오\n
+        오 성남 FC 다 함께 외쳐보자\n\n
+
+        One! Two! 성! 남!\n
+        승! 리! 한! 다!\n\n
+
+        오 성남 FC 오오오오오\n
+        오 성남 FC 오오오오오\n
+        오 성남 FC 오오오오오\n
+        오 성남 FC 다 함께 외쳐보자
+    </string>
+    <string name="musiclyrics11">
+        오 승리의 함성 오오오오오\n
+        오 승리의 함성 오오오오오\n
+        오 승리의 함성 오오오오오\n
+        오 승리의 함성 다 함께 외쳐보자\n\n
+
+        One! Two! 성! 남!\n
+        승! 리! 한! 다!\n\n
+
+        오 승리의 함성 오오오오오\n
+        오 승리의 함성 오오오오오\n
+        오 승리의 함성 오오오오오\n
+        오 승리의 함성 다 함께 외쳐보자
+    </string>
+    <string name="musiclyrics12">
+        랄라라라 랄랄랄랄라 나~의 성남\n
+        랄라라라 랄랄랄랄라 나~의 성남
+    </string>
+</resources>
