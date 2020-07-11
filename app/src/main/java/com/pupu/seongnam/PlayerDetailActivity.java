@@ -34,23 +34,19 @@ public class PlayerDetailActivity extends AppCompatActivity {
         body = findViewById(R.id.bodyView);
         school = findViewById(R.id.schoolView);
 
-        int b_num = intent.getIntExtra("b_num", 0);
+        int p_num = intent.getIntExtra("position", 0);
 
-        for (int i = 0; i < playerFragment.players.size(); i++) {
-            if (b_num == playerFragment.players.get(i).getB_num()) {
-                image.setImageDrawable(playerFragment.players.get(i).getImage());
-                name.setText(playerFragment.players.get(i).getName());
-                num.setText(playerFragment.players.get(i).getB_num() + "");
-                nation.setText("국적 : " + playerFragment.players.get(i).getNation());
-                position.setText("포지션 : " + playerFragment.players.get(i).getPosition());
-                birth.setText("생년월일 : " + playerFragment.players.get(i).getBirth() + " / " + playerFragment.players.get(i).getAge() + "세");
-                body.setText("신장 : " + playerFragment.players.get(i).getHeight() + "cm / 체중 : " + playerFragment.players.get(i).getWeight() + "kg");
-                if (playerFragment.players.get(i).getSchool() == null) {
-                    school.setText("출신교 : - ");
-                } else {
-                    school.setText("출신교 : " + playerFragment.players.get(i).getSchool());
-                }
-            }
+        image.setImageDrawable(playerFragment.players.get(p_num).getImage());
+        name.setText(playerFragment.players.get(p_num).getName());
+        num.setText(playerFragment.players.get(p_num).getB_num() + "");
+        nation.setText("국적 : " + playerFragment.players.get(p_num).getNation());
+        position.setText("포지션 : " + playerFragment.players.get(p_num).getPosition());
+        birth.setText("생년월일 : " + playerFragment.players.get(p_num).getBirth() + " / " + playerFragment.players.get(p_num).getAge() + "세");
+        body.setText("신장 : " + playerFragment.players.get(p_num).getHeight() + "cm / 체중 : " + playerFragment.players.get(p_num).getWeight() + "kg");
+        if (playerFragment.players.get(p_num).getSchool() == null) {
+            school.setText("출신교 : - ");
+        } else {
+            school.setText("출신교 : " + playerFragment.players.get(p_num).getSchool());
         }
     }
 }

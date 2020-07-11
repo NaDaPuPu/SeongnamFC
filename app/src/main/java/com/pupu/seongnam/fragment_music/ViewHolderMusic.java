@@ -24,7 +24,7 @@ public class ViewHolderMusic extends RecyclerView.ViewHolder {
         selectItem = itemView.findViewById(R.id.selectItem);
         linearItem = itemView.findViewById(R.id.linearItem);
 
-        linearItem.setOnClickListener(new View.OnClickListener() {
+        title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onViewHolderItemClickListener.onViewHolderItemClick();

@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListPopupWindow;
+import android.widget.SeekBar;
 
 import com.pupu.seongnam.fragment_music.RecyclerAdapterMusic;
 import com.pupu.seongnam.fragment_music.RecyclerItemMusic;
@@ -24,6 +26,14 @@ public class MusicFragment extends Fragment {
         init();
         setup();
         return v;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (adapter.mediaPlayer != null) {
+            adapter.mediaPlayer.stop();
+        }
     }
 
     private void init() {

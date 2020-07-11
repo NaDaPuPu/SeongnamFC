@@ -50,24 +50,26 @@ public class PlayerFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setup() {
-        players.add(new Defence(2, "요바노비치", "독일",
-                LocalDate.of(1989, 5, 3), 31, 185, 77, null, getResources().getDrawable(R.drawable.num_2)));
-        players.add(new Defence(4, "이창용", "대한민국",
-                LocalDate.of(1990, 8, 27), 30, 180, 76, "용인대", getResources().getDrawable(R.drawable.num_4)));
-        players.add(new Defence(6, "안영규", "대한민국",
-                LocalDate.of(1989, 12, 4), 31, 185, 79, "울산대", getResources().getDrawable(R.drawable.num_6)));
-        players.add(new Defence(13, "박태민", "대한민국",
-                LocalDate.of(1986, 1, 21), 34, 180, 74, "연세대", getResources().getDrawable(R.drawable.num_13)));
-        players.add(new Defence(20, "연제운", "대한민국",
-                LocalDate.of(1994, 8, 28), 26, 185, 78, "선문대", getResources().getDrawable(R.drawable.num_20)));
-        players.add(new Defence(32, "이태희", "대한민국",
-                LocalDate.of(1992, 6, 16), 28, 181, 66, "숭실대", getResources().getDrawable(R.drawable.num_32)));
-        players.add(new Defence(34, "최지묵", "대한민국",
-                LocalDate.of(1998, 10, 9), 22, 178, 70, "울산대", getResources().getDrawable(R.drawable.num_34)));
-        players.add(new Defence(35, "마상훈", "대한민국",
-                LocalDate.of(1991, 7, 25), 29, 183, 79, "순천고", getResources().getDrawable(R.drawable.num_35)));
-        players.add(new Defence(40, "임승겸", "대한민국",
-                LocalDate.of(1995, 4, 26), 25, 185, 78, "현대고", getResources().getDrawable(R.drawable.num_40)));
+        if (players.size() == 0) {
+            players.add(new Defence(2, "요바노비치", "독일",
+                    LocalDate.of(1989, 5, 3), 31, 185, 77, null, getResources().getDrawable(R.drawable.num_2)));
+            players.add(new Defence(4, "이창용", "대한민국",
+                    LocalDate.of(1990, 8, 27), 30, 180, 76, "용인대", getResources().getDrawable(R.drawable.num_4)));
+            players.add(new Defence(6, "안영규", "대한민국",
+                    LocalDate.of(1989, 12, 4), 31, 185, 79, "울산대", getResources().getDrawable(R.drawable.num_6)));
+            players.add(new Defence(13, "박태민", "대한민국",
+                    LocalDate.of(1986, 1, 21), 34, 180, 74, "연세대", getResources().getDrawable(R.drawable.num_13)));
+            players.add(new Defence(20, "연제운", "대한민국",
+                    LocalDate.of(1994, 8, 28), 26, 185, 78, "선문대", getResources().getDrawable(R.drawable.num_20)));
+            players.add(new Defence(32, "이태희", "대한민국",
+                    LocalDate.of(1992, 6, 16), 28, 181, 66, "숭실대", getResources().getDrawable(R.drawable.num_32)));
+            players.add(new Defence(34, "최지묵", "대한민국",
+                    LocalDate.of(1998, 10, 9), 22, 178, 70, "울산대", getResources().getDrawable(R.drawable.num_34)));
+            players.add(new Defence(35, "마상훈", "대한민국",
+                    LocalDate.of(1991, 7, 25), 29, 183, 79, "순천고", getResources().getDrawable(R.drawable.num_35)));
+            players.add(new Defence(40, "임승겸", "대한민국",
+                    LocalDate.of(1995, 4, 26), 25, 185, 78, "현대고", getResources().getDrawable(R.drawable.num_40)));
+        }
 
         for (int i = 0; i < players.size(); i++) {
             RecyclerItemPlayer item = new RecyclerItemPlayer(players.get(i).getName(), players.get(i).getB_num());

@@ -6,11 +6,12 @@ import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.SeekBar;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pupu.seongnam.MainActivity;
 import com.pupu.seongnam.R;
 
 import java.util.ArrayList;
@@ -21,13 +22,16 @@ public class RecyclerAdapterMusic extends RecyclerView.Adapter {
     private ArrayList<RecyclerItemMusic> mData = new ArrayList<>();
     private SparseBooleanArray selectedItems = new SparseBooleanArray();
     private int prePosition = -1;
-    private MediaPlayer mediaPlayer;
+    public MediaPlayer mediaPlayer;
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_music, parent, false);
-        return new ViewHolderMusic(v);
+
+        ViewHolderMusic viewHolderMusic = new ViewHolderMusic(v);
+
+        return viewHolderMusic;
     }
 
     @Override
@@ -37,10 +41,13 @@ public class RecyclerAdapterMusic extends RecyclerView.Adapter {
         viewHolderMusic.setOnViewHolderItemClickListener(new OnViewHolderItemClickListener() {
             @Override
             public void onViewHolderItemClick() {
+                Log.d("position", position + "");
                 if (selectedItems.get(position)) {
+                    Log.d("selectedItems.get", "running");
                     // 펼쳐진 Item을 클릭 시
                     selectedItems.delete(position);
                 } else {
+                    Log.d("else selectedItems.get", "running");
                     // 직전의 클릭됐던 Item의 클릭상태를 지움
                     selectedItems.delete(prePosition);
                     // 클릭한 Item의 position을 저장
@@ -56,7 +63,9 @@ public class RecyclerAdapterMusic extends RecyclerView.Adapter {
                     mediaPlayer.release();
                     mediaPlayer = null;
                 }
+
                 if (selectedItems.get(position)) {
+                    Log.d("selectedItems.get2", "running");
                     switch (position) {
                         case 0:
                             mediaPlayer = MediaPlayer.create(v.getContext(), R.raw.music1);
