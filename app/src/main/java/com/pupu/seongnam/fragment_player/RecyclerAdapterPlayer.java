@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class RecyclerAdapterPlayer extends RecyclerView.Adapter {
     private View v;
     private ArrayList<RecyclerItemPlayer> mData = new ArrayList<>();
-    private SparseBooleanArray selectedItems = new SparseBooleanArray();
 
     @NonNull
     @Override
@@ -29,7 +28,7 @@ public class RecyclerAdapterPlayer extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         ViewHolderPlayer viewHolderPlayer = (ViewHolderPlayer) holder;
-        viewHolderPlayer.onBind(mData.get(position), position, selectedItems);
+        viewHolderPlayer.onBind(mData.get(position), position);
         viewHolderPlayer.setOnViewHolderItemClickListener(new OnViewHolderItemClickListener() {
             @Override
             public void onViewHolderItemClick() {

@@ -1,6 +1,5 @@
 package com.pupu.seongnam.fragment_player;
 
-import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,7 +29,7 @@ public class ViewHolderPlayer extends RecyclerView.ViewHolder {
         });
     }
 
-    public void onBind(RecyclerItemPlayer item, int position, SparseBooleanArray selectedItems) {
+    public void onBind(RecyclerItemPlayer item, int position) {
         name.setText(item.getNameStr());
         num.setText(item.getB_numInt() + "");
     }

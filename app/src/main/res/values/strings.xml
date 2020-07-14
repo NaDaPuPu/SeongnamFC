@@ -22,7 +22,7 @@
 
     <!--  Music Lyrics String  -->
     <string name="musiclyrics1">
-        Only one BLACK\n
+        \tOnly one BLACK\n
         (We are SEONGNAM)\n\n
 
         Only one BLACK\n
@@ -95,11 +95,11 @@
         (My hands, Your Hands)\n\n
 
         (Only one BLACK)\n
-        손을 머리 위로 들고 박수를 쳐\n\n
+        손을 머리 위로 들고 박수를 쳐\n
         (Only one BLACK)\n
-        주변 눈치 보지 말고 그냥 맘대로 해\n\n
+        주변 눈치 보지 말고 그냥 맘대로 해\n
         (Only one BLACK)\n
-        여기 모인 사람 모두 같은 맘이잖아\n\n
+        여기 모인 사람 모두 같은 맘이잖아\n
         (Only one BLACK)\n
         승리의 High five! 그 순간을 위해\n\n
 
@@ -125,13 +125,13 @@
         승리의 High five! 그 순간을 위해
     </string>
     <string name="musiclyrics2">
-        나의 사랑 성남\n
+        \t나의 사랑 성남\n
         오 우리의 성남\n
         승리를 위해 전진\n
         Ready Go!
     </string>
     <string name="musiclyrics3">
-        내사랑 성남\n
+        \t내 사랑 성남\n
         내 삶의 전부\n
         성남을 위해\n
         난 노래해\n
@@ -139,7 +139,7 @@
         영원히 성남과 함께하리
     </string>
     <string name="musiclyrics4">
-        뛰어라 뜨거운 가슴으로\n
+        \t뛰어라 뜨거운 가슴으로\n
         우리는 승리하리라\n
         성남, 성남\n
         우리 모두 하나되리\n\n
@@ -171,7 +171,7 @@
         Hey! Hey!
     </string>
     <string name="musiclyrics5">
-        성남의 승리를 위하여\n
+        \t성남의 승리를 위하여\n
         오 오오오 오오오\n\n
 
         성남의 승리를 위하여\n
@@ -184,7 +184,7 @@
         오 오오오 오오오
     </string>
     <string name="musiclyrics6">
-        성남의, 성남의, 성남의\n
+        \t성남의, 성남의, 성남의\n
         승리를 원한다면, 한다면, 한다면\n
         두 팔을 높이 올려, 올려, 올려\n
         모두 함께 소리쳐, 소리쳐, 소리쳐\n
@@ -192,7 +192,7 @@
         오오오오오오~ 오오오오오오~
     </string>
     <string name="musiclyrics7">
-        알레 성남\n
+        \t알레 성남\n
         승리를 향해달리고\n
         승리를 향해달리고\n
         승리를 향해달리고\n
@@ -200,7 +200,7 @@
         알레 성남!
     </string>
     <string name="musiclyrics8">
-        여자친구 생일인데\n
+        \t여자친구 생일인데\n
         난 축구장에 와 있네\n
         인생 어차피 혼자인것을\n
         축구나 보며 놀아보세\n
@@ -210,7 +210,7 @@
         나의 성남 만만세~
     </string>
     <string name="musiclyrics9">
-        영원한 승자는 성남FC\n
+        \t영원한 승자는 성남FC\n
         오오오오오오오~ 오레오레오레\n
         오~ 성남FC 꼭 승리하리라\n
         오~ 성남FC 꼭 승리하리라\n\n
@@ -221,7 +221,7 @@
         오~ 성남FC 꼭 승리하리라
     </string>
     <string name="musiclyrics10">
-        오 성남 FC 오오오오오\n
+        \t오 성남 FC 오오오오오\n
         오 성남 FC 오오오오오\n
         오 성남 FC 오오오오오\n
         오 성남 FC 다 함께 외쳐보자\n\n
@@ -235,7 +235,7 @@
         오 성남 FC 다 함께 외쳐보자
     </string>
     <string name="musiclyrics11">
-        오 승리의 함성 오오오오오\n
+        \t오 승리의 함성 오오오오오\n
         오 승리의 함성 오오오오오\n
         오 승리의 함성 오오오오오\n
         오 승리의 함성 다 함께 외쳐보자\n\n
@@ -249,7 +249,7 @@
         오 승리의 함성 다 함께 외쳐보자
     </string>
     <string name="musiclyrics12">
-        랄라라라 랄랄랄랄라 나~의 성남\n
+        \t랄라라라 랄랄랄랄라 나~의 성남\n
         랄라라라 랄랄랄랄라 나~의 성남
     </string>
 </resources>

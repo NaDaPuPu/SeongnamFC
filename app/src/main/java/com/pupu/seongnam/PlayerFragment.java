@@ -25,7 +25,7 @@ import java.util.ArrayList;
 public class PlayerFragment extends Fragment {
     private View v;
     private RecyclerAdapterPlayer adapter;
-    public static ArrayList<Player> players = new ArrayList();
+    public static ArrayList<Player> players = new ArrayList<>();
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
