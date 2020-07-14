@@ -2,8 +2,7 @@
 Fan made Seongnam FC App
 
 # 성남 FC 팬메이드 앱
-> Made by NaDaPuPu
-\n\n
+> Made by NaDaPuPu  
 
 2020-07-04 제작 시작
 
