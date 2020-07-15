@@ -34,6 +34,7 @@ public class RecyclerAdapterPlayer extends RecyclerView.Adapter {
             public void onViewHolderItemClick() {
                 Intent intent = new Intent(v.getContext(), PlayerDetailActivity.class);
                 intent.putExtra("position", position);
+                intent.putExtra("pos", mData.get(position).getPosStr());
                 v.getContext().startActivity(intent);
             }
         });

@@ -35,18 +35,69 @@ public class PlayerDetailActivity extends AppCompatActivity {
         school = findViewById(R.id.schoolView);
 
         int p_num = intent.getIntExtra("position", 0);
+        String pos = intent.getStringExtra("pos");
 
-        image.setImageDrawable(playerFragment.players.get(p_num).getImage());
-        name.setText(playerFragment.players.get(p_num).getName());
-        num.setText(playerFragment.players.get(p_num).getB_num() + "");
-        nation.setText("국적 : " + playerFragment.players.get(p_num).getNation());
-        position.setText("포지션 : " + playerFragment.players.get(p_num).getPosition());
-        birth.setText("생년월일 : " + playerFragment.players.get(p_num).getBirth() + " / " + playerFragment.players.get(p_num).getAge() + "세");
-        body.setText("신장 : " + playerFragment.players.get(p_num).getHeight() + "cm / 체중 : " + playerFragment.players.get(p_num).getWeight() + "kg");
-        if (playerFragment.players.get(p_num).getSchool() == null) {
-            school.setText("출신교 : - ");
-        } else {
-            school.setText("출신교 : " + playerFragment.players.get(p_num).getSchool());
+        switch (pos) {
+            case "GK":
+                image.setImageDrawable(playerFragment.goalkeepers.get(p_num).getImage());
+                name.setText(playerFragment.goalkeepers.get(p_num).getName());
+                num.setText(playerFragment.goalkeepers.get(p_num).getB_num() + "");
+                nation.setText("국적 : " + playerFragment.goalkeepers.get(p_num).getNation());
+                position.setText("포지션 : " + playerFragment.goalkeepers.get(p_num).getPosition());
+                birth.setText("생년월일 : " + playerFragment.goalkeepers.get(p_num).getBirth() + " / " + playerFragment.goalkeepers.get(p_num).getAge() + "세");
+                body.setText("신장 : " + playerFragment.goalkeepers.get(p_num).getHeight() + "cm / 체중 : " + playerFragment.goalkeepers.get(p_num).getWeight() + "kg");
+                if (playerFragment.goalkeepers.get(p_num).getSchool() == null) {
+                    school.setText("출신교 : - ");
+                } else {
+                    school.setText("출신교 : " + playerFragment.goalkeepers.get(p_num).getSchool());
+                }
+                break;
+
+            case "DF":
+                image.setImageDrawable(playerFragment.defences.get(p_num).getImage());
+                name.setText(playerFragment.defences.get(p_num).getName());
+                num.setText(playerFragment.defences.get(p_num).getB_num() + "");
+                nation.setText("국적 : " + playerFragment.defences.get(p_num).getNation());
+                position.setText("포지션 : " + playerFragment.defences.get(p_num).getPosition());
+                birth.setText("생년월일 : " + playerFragment.defences.get(p_num).getBirth() + " / " + playerFragment.defences.get(p_num).getAge() + "세");
+                body.setText("신장 : " + playerFragment.defences.get(p_num).getHeight() + "cm / 체중 : " + playerFragment.defences.get(p_num).getWeight() + "kg");
+                if (playerFragment.defences.get(p_num).getSchool() == null) {
+                    school.setText("출신교 : - ");
+                } else {
+                    school.setText("출신교 : " + playerFragment.defences.get(p_num).getSchool());
+                }
+                break;
+
+            case "MF":
+                image.setImageDrawable(playerFragment.midfielders.get(p_num).getImage());
+                name.setText(playerFragment.midfielders.get(p_num).getName());
+                num.setText(playerFragment.midfielders.get(p_num).getB_num() + "");
+                nation.setText("국적 : " + playerFragment.midfielders.get(p_num).getNation());
+                position.setText("포지션 : " + playerFragment.midfielders.get(p_num).getPosition());
+                birth.setText("생년월일 : " + playerFragment.midfielders.get(p_num).getBirth() + " / " + playerFragment.midfielders.get(p_num).getAge() + "세");
+                body.setText("신장 : " + playerFragment.midfielders.get(p_num).getHeight() + "cm / 체중 : " + playerFragment.midfielders.get(p_num).getWeight() + "kg");
+                if (playerFragment.midfielders.get(p_num).getSchool() == null) {
+                    school.setText("출신교 : - ");
+                } else {
+                    school.setText("출신교 : " + playerFragment.midfielders.get(p_num).getSchool());
+                }
+                break;
+
+            case "FW":
+                image.setImageDrawable(playerFragment.forwards.get(p_num).getImage());
+                name.setText(playerFragment.forwards.get(p_num).getName());
+                num.setText(playerFragment.forwards.get(p_num).getB_num() + "");
+                nation.setText("국적 : " + playerFragment.forwards.get(p_num).getNation());
+                position.setText("포지션 : " + playerFragment.forwards.get(p_num).getPosition());
+                birth.setText("생년월일 : " + playerFragment.forwards.get(p_num).getBirth() + " / " + playerFragment.forwards.get(p_num).getAge() + "세");
+                body.setText("신장 : " + playerFragment.forwards.get(p_num).getHeight() + "cm / 체중 : " + playerFragment.forwards.get(p_num).getWeight() + "kg");
+                if (playerFragment.forwards.get(p_num).getSchool() == null) {
+                    school.setText("출신교 : - ");
+                } else {
+                    school.setText("출신교 : " + playerFragment.forwards.get(p_num).getSchool());
+                }
+                break;
         }
+
     }
 }

@@ -1,12 +1,13 @@
 package com.pupu.seongnam.fragment_player;
 
 public class RecyclerItemPlayer {
-    private String nameStr;
+    private String nameStr, posStr;
     private int b_numInt;
 
-    public RecyclerItemPlayer(String name, int b_num) {
+    public RecyclerItemPlayer(String name, int b_num, String pos) {
         this.nameStr = name;
         this.b_numInt = b_num;
+        this.posStr = pos;
     }
 
     public String getNameStr() {
@@ -23,5 +24,13 @@ public class RecyclerItemPlayer {
 
     public void setB_numInt(int b_numInt) {
         this.b_numInt = b_numInt;
+    }
+
+    public String getPosStr() {
+        return posStr;
+    }
+
+    public void setPosStr(String posStr) {
+        this.posStr = posStr;
     }
 }
